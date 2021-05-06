@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/kotaewing/readme-generator#readme",
   "dependencies": {
-    "inquirer": "^8.0.0"
+    "inquirer": "^8.0.0",
+    "nodemon": "^2.0.7"
   }
 }
