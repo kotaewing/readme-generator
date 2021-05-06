@@ -13,13 +13,35 @@ const questions = [
     'How should a user test your application?'
 ];
 
+const [ title, description, installation, usage, license, constribiton, test ] = questions;
+
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {
-
+    fs.writeFile(fileName, data, err => {
+        if (err) {
+            console.log(err)
+            return
+        }
+        console.log('File Created Successfully!')
+    })
 }
 
 // TODO: Create a function to initialize app
-function init() {}
+function init() {
+    inquirer
+    .prompt([
+        {
+            type: 'input',
+            name: 'title',
+            message: title
+        },
+        {
+            type: 'input',
+            name: 'description',
+            message: description
+        }
+    ])
+}
 
 // Function call to initialize app
 init();
