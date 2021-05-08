@@ -76,9 +76,6 @@ function init() {
             name: 'test',
             message: test
         },
-        {
-
-        }
     ])
 }
 
@@ -90,3 +87,6 @@ init()
 .then(pageMarkdown => {
     return writeToFile(pageMarkdown);
 })
+.catch(err => {
+    console.log(err);
+});
