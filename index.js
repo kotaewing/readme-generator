@@ -28,8 +28,7 @@ function writeToFile(data) {
 
 // TODO: Create a function to initialize app
 function init() {
-    inquirer
-    .prompt([
+    return inquirer.prompt([
         {
             type: 'input',
             name: 'title',
@@ -41,8 +40,13 @@ function init() {
             message: description
         }
     ])
-    .then(writeToFile())
 }
 
 // Function call to initialize app
-init();
+init()
+.then(readmeData => {
+    return generateMarkdown(readmeData);
+})
+.then(pageMarkdown => {
+    return writeToFile(pageMarkdown);
+})
