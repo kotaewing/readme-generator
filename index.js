@@ -65,7 +65,7 @@ function init() {
             type: 'list',
             name: 'license',
             message: license,
-            choices: ['MIT', 'GNU GPLv3'] 
+            choices: ['MIT', 'GNU GPLv3', 'Apache', 'GNU AGPLv3', 'None'] 
         },
         {
             type: 'input',

@@ -1,39 +1,36 @@
-const descriptions = require('./descriptions')
-
 // TODO: Create a function that returns a license badge based on which license is passed in
 // If there is no license, return an empty string
 function renderLicenseBadge(license) {
     const urlFix = license.replace(' ', '_')
-    if (license) {
-        return `![License Badge](https://img.shields.io/badge/license-${urlFix}-green)`;
-    } else {
+    if (license === 'None') {
         return '';
+    } else {
+        return `![License Badge](https://img.shields.io/badge/license-${urlFix}-green)`;
     }
 }
 
 // TODO: Create a function that returns the license link
 // If there is no license, return an empty string
 function renderLicenseLink(license) {
-    if (license) {
-        return '* [License](#license)';
-    } else {
+    if (license === 'None') {
         return '';
+    } else {
+        return '* [License](#license)';
     }
 }
 
 // TODO: Create a function that returns the license section of README
 // If there is no license, return an empty string
 function renderLicenseSection(license) {
-    if (license) {
-        return '## License';
-    } else {
+    if (license === 'None') {
         return '';
+    } else {
+        return '## License';
     }
 }
 
 function renderLicenseDescription(license) {
-    const linkFix = license.replace(' ', '-');
-    if (!license) {
+    if (license === 'None') {
         return '';
     }
     
@@ -55,7 +52,7 @@ ${renderLicenseBadge(data.license)}
 * [Usage](#usage)
 ${renderLicenseLink(data.license)}
 * [Contributing](#contributing)
-* [Testing](#testing)
+* [Tests](#tests)
 * [Questions](#questions)
 
 
@@ -74,7 +71,7 @@ ${renderLicenseDescription(data.license)}
 ## Contributing
 ${data.contribution}
 
-## Testing
+## Tests
 ${data.test}
 
 ## Questions
