@@ -13,7 +13,7 @@ const questions = [
     'How should a user test your application?'
 ];
 
-const [ title, description, installation, usage, license, constribiton, test ] = questions;
+const [ title, description, installation, usage, license, contribution, test ] = questions;
 
 // TODO: Create a function to write README file
 function writeToFile(data) {
@@ -38,7 +38,32 @@ function init() {
             type: 'input',
             name: 'description',
             message: description
-        }
+        },
+        {
+            type: 'input',
+            name: 'installation',
+            message: installation
+        },
+        {
+            type: 'input',
+            name: 'usage',
+            message: usage
+        },
+        {
+            type: 'input',
+            name: 'license',
+            message: license
+        },
+        {
+            type: 'input',
+            name: 'contribution',
+            message: contribution
+        },
+        {
+            type: 'input',
+            name: 'test',
+            message: test
+        },
     ])
 }
 
