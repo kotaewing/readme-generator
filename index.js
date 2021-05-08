@@ -62,9 +62,10 @@ function init() {
             message: usage
         },
         {
-            type: 'input',
+            type: 'list',
             name: 'license',
-            message: license
+            message: license,
+            choices: ['MIT', 'GNU GPLv3'] 
         },
         {
             type: 'input',

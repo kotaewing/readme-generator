@@ -3,8 +3,9 @@ const descriptions = require('./descriptions')
 // TODO: Create a function that returns a license badge based on which license is passed in
 // If there is no license, return an empty string
 function renderLicenseBadge(license) {
+    const urlFix = license.replace(' ', '_')
     if (license) {
-        return `![License Badge](https://img.shields.io/badge/license-${license}-green)`;
+        return `![License Badge](https://img.shields.io/badge/license-${urlFix}-green)`;
     } else {
         return '';
     }
@@ -31,11 +32,14 @@ function renderLicenseSection(license) {
 }
 
 function renderLicenseDescription(license) {
+    const linkFix = license.replace(' ', '-');
     if (!license) {
         return '';
     }
     
-    return license;
+    return `
+This project is licensed under the ${license} guidelines.  To learn more about this licensing, [click here](https://choosealicense.com/licenses/)
+    `;
     
 }
 
