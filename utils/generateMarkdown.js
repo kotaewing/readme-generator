@@ -12,7 +12,7 @@ function renderLicenseBadge(license) {
 // If there is no license, return an empty string
 function renderLicenseLink(license) {
     if (license) {
-        return '[License](#license)';
+        return '*[License](#license)';
     } else {
         return '';
     }
@@ -28,11 +28,28 @@ function renderLicenseSection(license) {
     }
 }
 
+function renderLicenseDescription(license) {
+    if (!license) {
+        return '';
+    }
+
+    const descriptions = []
+}
+
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
   return `
 # ${data.title}
 ${renderLicenseBadge(data.license)}
+
+## Table of Contents
+*[Description](#description)
+*[Installation](#installation)
+*[Usage](#usage)
+${renderLicenseLink(data.license)}
+*[Contribution](#contribution)
+*[Testing](#testing)
+
 
 ## Description
 ${data.description}
@@ -42,6 +59,9 @@ ${data.installation}
 
 ## Usage
 ${data.usage}
+
+${renderLicenseSection}
+${renderLicenseDescription}
 `;
 }
 

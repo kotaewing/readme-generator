@@ -1,12 +1,12 @@
 
-# Test 3
+# Title
 ![License Badge](https://img.shields.io/badge/license-MIT-green)
 
 ## Description
-Test 3
+Description
 
 ## Installation
-Tets 3
+Install
 
 ## Usage
-Test 3
+Usage
