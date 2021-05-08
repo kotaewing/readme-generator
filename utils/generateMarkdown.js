@@ -1,3 +1,5 @@
+const descriptions = require('./descriptions')
+
 // TODO: Create a function that returns a license badge based on which license is passed in
 // If there is no license, return an empty string
 function renderLicenseBadge(license) {
@@ -32,12 +34,14 @@ function renderLicenseDescription(license) {
     if (!license) {
         return '';
     }
-
-    const descriptions = []
+    
+    return license;
+    
 }
 
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
+    console.log(data);
   return `
 # ${data.title}
 ${renderLicenseBadge(data.license)}
@@ -49,6 +53,7 @@ ${renderLicenseBadge(data.license)}
 ${renderLicenseLink(data.license)}
 *[Contribution](#contribution)
 *[Testing](#testing)
+*[Questions](#questions)
 
 
 ## Description
@@ -62,7 +67,19 @@ ${data.usage}
 
 ${renderLicenseSection}
 ${renderLicenseDescription}
+
+## Contribution
+${data.contribution}
+
+## Testing
+${data.test}
+
 `;
 }
 
 module.exports = generateMarkdown;
+
+
+// ## Questions
+// ${data.questions.github}
+// ${data.questions.email}

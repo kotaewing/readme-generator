@@ -10,10 +10,12 @@ const questions = [
     'How will a user use your project?',
     'What kind of license is your project licensed under?',
     'What are the contribution guidelines for your project?',
-    'How should a user test your application?'
+    'How should a user test your application?',
+    'What is your GitHub Username?',
+    'What is your Email Address?'
 ];
 
-const [ title, description, installation, usage, license, contribution, test ] = questions;
+const [ title, description, installation, usage, license, contribution, test, github, email ] = questions;
 
 // TODO: Create a function to write README file
 function writeToFile(data) {
@@ -29,6 +31,16 @@ function writeToFile(data) {
 // TODO: Create a function to initialize app
 function init() {
     return inquirer.prompt([
+        {
+            type: 'input',
+            name:'github',
+            message: github
+        },
+        {
+            type: 'input',
+            name: 'email',
+            message: email
+        },
         {
             type: 'input',
             name: 'title',
@@ -64,6 +76,9 @@ function init() {
             name: 'test',
             message: test
         },
+        {
+
+        }
     ])
 }
 
