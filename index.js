@@ -16,8 +16,8 @@ const questions = [
 const [ title, description, installation, usage, license, constribiton, test ] = questions;
 
 // TODO: Create a function to write README file
-function writeToFile(fileName, data) {
-    fs.writeFile(fileName, data, err => {
+function writeToFile(data) {
+    fs.writeFile('./dist/README.md', data, err => {
         if (err) {
             console.log(err)
             return
@@ -41,6 +41,7 @@ function init() {
             message: description
         }
     ])
+    .then(writeToFile())
 }
 
 // Function call to initialize app
