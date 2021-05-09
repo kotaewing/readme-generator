@@ -34,32 +34,80 @@ function init() {
         {
             type: 'input',
             name:'github',
-            message: github
+            message: github,
+            validate: confirmVal => {
+                if (confirmVal) {
+                    return true
+                } else {
+                    console.log('Please enter a valid answer!')
+                    return false
+                }
+            }
         },
         {
             type: 'input',
             name: 'email',
-            message: email
+            message: email,
+            validate: confirmVal => {
+                if (confirmVal) {
+                    return true
+                } else {
+                    console.log('Please enter a valid answer!')
+                    return false
+                }
+            }
         },
         {
             type: 'input',
             name: 'title',
-            message: title
+            message: title,
+            validate: confirmVal => {
+                if (confirmVal) {
+                    return true
+                } else {
+                    console.log('Please enter a valid answer!')
+                    return false
+                }
+            }
         },
         {
             type: 'input',
             name: 'description',
-            message: description
+            message: description,
+            validate: confirmVal => {
+                if (confirmVal) {
+                    return true
+                } else {
+                    console.log('Please enter a valid answer!')
+                    return false
+                }
+            }
         },
         {
             type: 'input',
             name: 'installation',
-            message: installation
+            message: installation,
+            validate: confirmVal => {
+                if (confirmVal) {
+                    return true
+                } else {
+                    console.log('Please enter a valid answer!')
+                    return false
+                }
+            }
         },
         {
             type: 'input',
             name: 'usage',
-            message: usage
+            message: usage,
+            validate: confirmVal => {
+                if (confirmVal) {
+                    return true
+                } else {
+                    console.log('Please enter a valid answer!')
+                    return false
+                }
+            }
         },
         {
             type: 'list',
@@ -70,12 +118,28 @@ function init() {
         {
             type: 'input',
             name: 'contribution',
-            message: contribution
+            message: contribution,
+            validate: confirmVal => {
+                if (confirmVal) {
+                    return true
+                } else {
+                    console.log('Please enter a valid answer!')
+                    return false
+                }
+            }
         },
         {
             type: 'input',
             name: 'test',
-            message: test
+            message: test,
+            validate: confirmVal => {
+                if (confirmVal) {
+                    return true
+                } else {
+                    console.log('Please enter a valid answer!')
+                    return false
+                }
+            }
         },
     ])
 }
