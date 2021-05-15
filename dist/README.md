@@ -1,6 +1,6 @@
 
-# fksfjls
-![License Badge](https://img.shields.io/badge/license-GNU_GPLv3-green)
+# Readme Generator
+![License Badge](https://img.shields.io/badge/license-MIT-green)
 
 ## Table of Contents
 * [Description](#description)
@@ -13,27 +13,27 @@
 
 
 ## Description
-klsdfjlks
+This is an application designed to make writing readme files a lot easier!
 
 ## Installation
-kjlsjf
+They will clone the repository and then run npm install
 
 ## Usage
-lkdfsj
+Run node index.js, and then type each answer into the terminal
 
 ## License
 
-This project is licensed under the GNU GPLv3 guidelines.  To learn more about this licensing, [click here](https://choosealicense.com/licenses/)
+This project is licensed under the MIT guidelines.  To learn more about this licensing, [click here](https://choosealicense.com/licenses/)
     
 
 ## Contributing
-jfklsd
+There are no contribution guidelines currently
 
 ## Tests
-jklfs
+There are no tests for this application currently
 
 ## Questions
 If you have any additional questions, you can reach me here:
 
-* GitHub Account - [jkfld](https://github.com/jkfld)
-* Email Address - jkldf
+* GitHub Account - [kotaewing](https://github.com/kotaewing)
+* Email Address - kota.ewing@gmail.com
