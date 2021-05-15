@@ -21,6 +21,8 @@ Clone the github repository to your machine, run 'npm install' in the terminal t
 ## Usage
 Just type in each answer to each question, and you are set
 
+Here is a link to the video demonstration: https://youtu.be/ObZxOcIrB1M
+
 ## License
 
 This project is licensed under the GNU AGPLv3 guidelines.  To learn more about this licensing, [click here](https://choosealicense.com/licenses/)
