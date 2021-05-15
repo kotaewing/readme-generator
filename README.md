@@ -1,6 +1,6 @@
 
 # Readme Generator
-!(screenshot of the terminal running the application)[./assets/images/Screen Shot 2021-05-15 at 10.38.00 AM]
+![screenshot of the terminal running the application](./assets/images/screenshot.png)
 ## Table of Contents
 * [Description](#description)
 * [Installation](#installation)
